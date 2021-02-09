@@ -1,0 +1,4 @@
+Could not resolve named expression "Preconditions.checkState(currentTracer != null, "Tracer should not be null at the end of a pass.")"
+Could not resolve named expression "SourceFile.fromFile(fileName, Charsets.UTF_8)"
+Could not resolve named expression "SourceFile.fromFile(file, Charsets.UTF_8)"
+end

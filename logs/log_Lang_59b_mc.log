@@ -1,0 +1,51 @@
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Could not calculate type of "ArrayUtils"
+Exception in thread "main" java.lang.OutOfMemoryError: GC overhead limit exceeded
+	at com.github.javaparser.ast.Node.<init>(Node.java:164)
+	at com.github.javaparser.ast.expr.Expression.<init>(Expression.java:52)
+	at com.github.javaparser.ast.expr.NameExpr.<init>(NameExpr.java:71)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:603)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:35)
+	at com.github.javaparser.ast.expr.NameExpr.accept(NameExpr.java:79)
+	at com.github.javaparser.ast.visitor.CloneVisitor.cloneNode(CloneVisitor.java:1077)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:589)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:35)
+	at com.github.javaparser.ast.expr.MethodCallExpr.accept(MethodCallExpr.java:115)
+	at com.github.javaparser.ast.visitor.CloneVisitor.cloneNode(CloneVisitor.java:1089)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:433)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:35)
+	at com.github.javaparser.ast.expr.BinaryExpr.accept(BinaryExpr.java:140)
+	at com.github.javaparser.ast.visitor.CloneVisitor.cloneNode(CloneVisitor.java:1089)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:434)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:35)
+	at com.github.javaparser.ast.expr.BinaryExpr.accept(BinaryExpr.java:140)
+	at com.github.javaparser.ast.visitor.CloneVisitor.cloneNode(CloneVisitor.java:1089)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:867)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:35)
+	at com.github.javaparser.ast.stmt.IfStmt.accept(IfStmt.java:82)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:1028)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:35)
+	at com.github.javaparser.ast.NodeList.accept(NodeList.java:277)
+	at com.github.javaparser.ast.visitor.CloneVisitor.cloneList(CloneVisitor.java:1100)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:777)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:35)
+	at com.github.javaparser.ast.stmt.BlockStmt.accept(BlockStmt.java:70)
+	at com.github.javaparser.ast.visitor.CloneVisitor.cloneNode(CloneVisitor.java:1077)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:221)
+	at com.github.javaparser.ast.visitor.CloneVisitor.visit(CloneVisitor.java:35)
