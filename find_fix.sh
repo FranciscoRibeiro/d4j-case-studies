@@ -9,9 +9,21 @@ DIR="$1"
 LINE="$2"
 CODE="$3"
 
-for file in $(find "$DIR" -name "*\.java")
+#echo "BEGIN: $DIR; $LINE; $CODE"
+
+find "$DIR" -name "*\.java" \
+	| while read -r file
 do
 	fetched_code="$(head -n "$LINE" "$file" | tail -n 1 | grep "$CODE")"
-	[[ "$fetched_code" != "" ]] && (echo "$file"; echo "$fetched_code")
+	[[ "$fetched_code" != "" ]] && { echo "$file"; echo "$fetched_code"; }
 done
+
+#for file in $(find "$DIR" -name "*\.java")
+#do
+	#fetched_code="$(head -n "$LINE" "$file" | tail -n 1 | grep "$CODE")"
+#	fetched_code=$(head -n "$LINE" "$file" | tail -n 1 | grep "$CODE")
+	#[[ "$fetched_code" != "" ]] && { echo "$file"; echo "$fetched_code"; }
+#done
+
+#echo "END: $DIR; $LINE; $CODE"
 
