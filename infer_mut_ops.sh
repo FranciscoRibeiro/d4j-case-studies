@@ -15,6 +15,7 @@ for file in ${java_sources[@]}
 do
 	if [[ -f "$DIR/next/$file" ]]
 	then
+		echo "$DIR/previous/$file"
 		result="$(timeout 1m java -jar "$MORPHEUS" "$DIR/previous/$file" "$DIR/next/$file")"
 		exit_code="$?"
 		case "$exit_code" in
