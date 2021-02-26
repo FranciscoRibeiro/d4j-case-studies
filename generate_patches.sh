@@ -1,8 +1,12 @@
 #!/bin/bash
 
+rm logs/*
+rm -r generated_patches/*
+
 AUTO_REPAIRER="auto_repairer/auto_repairer.jar"
-STRATEGIES=("ms" "ml" "mc")
+STRATEGIES=("ms" "ml" "mc" "mr")
 projs=($(ls d4j_projects))
+#projs=("Closure_168b")
 
 for proj in ${projs[@]}
 do
